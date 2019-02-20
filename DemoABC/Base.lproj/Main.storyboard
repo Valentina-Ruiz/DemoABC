@@ -121,25 +121,36 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nkY-Af-Emv">
-                                <rect key="frame" x="163" y="231" width="46" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nkY-Af-Emv">
+                                <rect key="frame" x="16" y="148" width="343" height="30"/>
+                                <color key="backgroundColor" red="0.61973326299999998" green="1" blue="0.91181720099999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="7eT-zI-3Q1"/>
+                                </constraints>
                                 <state key="normal" title="Page 1"/>
                                 <connections>
                                     <segue destination="1QQ-GB-dhL" kind="show" id="EIa-a9-YXc"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0OT-6c-0Nu">
-                                <rect key="frame" x="161" y="318" width="48" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0OT-6c-0Nu">
+                                <rect key="frame" x="16" y="210" width="60" height="30"/>
+                                <color key="backgroundColor" red="0.61973326299999998" green="1" blue="0.91181720099999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="U7p-Pq-P1x"/>
+                                    <constraint firstAttribute="width" constant="60" id="Xk9-cO-qoo"/>
+                                </constraints>
                                 <state key="normal" title="Page 2"/>
                                 <connections>
                                     <segue destination="N1d-HX-UVP" kind="show" id="LTB-va-8Eo"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NfK-d8-gtg">
-                                <rect key="frame" x="161" y="403" width="48" height="45"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NfK-d8-gtg">
+                                <rect key="frame" x="299" y="210" width="60" height="30"/>
+                                <color key="backgroundColor" red="0.61973326299999998" green="1" blue="0.91181720099999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="iiA-Zc-StB"/>
+                                    <constraint firstAttribute="width" constant="60" id="xdS-u3-zLL"/>
+                                </constraints>
                                 <state key="normal" title="Page 3"/>
                                 <connections>
                                     <segue destination="IKH-nu-SkD" kind="show" id="9TH-uM-HzC"/>
@@ -147,6 +158,16 @@
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="nkY-Af-Emv" secondAttribute="trailing" constant="16" id="Qli-Td-iv9"/>
+                            <constraint firstItem="NfK-d8-gtg" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="146" id="ahm-Zs-YJ1"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="NfK-d8-gtg" secondAttribute="trailing" constant="16" id="i5b-cJ-nCc"/>
+                            <constraint firstItem="nkY-Af-Emv" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="84" id="oml-Ax-vnK"/>
+                            <constraint firstItem="nkY-Af-Emv" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="p7m-67-8is"/>
+                            <constraint firstItem="0OT-6c-0Nu" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="146" id="pNp-fa-V0E"/>
+                            <constraint firstItem="0OT-6c-0Nu" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="rpx-j0-aq2"/>
+                            <constraint firstItem="NfK-d8-gtg" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="0OT-6c-0Nu" secondAttribute="trailing" constant="134" id="rxo-7Z-ECi"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" title="Main" id="trs-Bu-tVg"/>
